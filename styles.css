@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "Young_serif";
+    src: url(/Fonts/Young_Serif/YoungSerif-Regular.ttf);
+}
+
+main {
+    width: 100%;
+    font-family: "Young_serif", sans-serif;
+}
+
+.logo {
+    margin: 4rem auto;
+    display: block
+}
+
+.intro {
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.intro h1 {
+    text-align: center;
+}
+
+.intro p {
+    color: #A9A9A9;
+    text-align: center;
+}
+
+.intro .textBox {
+    width: 20%;
+    align-self: center;
+}
+.buttonBox {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.downloadbtn {
+    background-color: rgb(77, 196, 196);
+    color: white;
+    border-radius: 50px;
+    width: 10rem;
+    height: 3rem;
+}
+
+
+.aboutbtn {
+    background-color: rgb(146, 87, 201);
+    color: white;
+    border-radius: 50px;
+    width: 8rem;
+    height: 3rem;
+}
+
+.section1 {
+    margin: 4rem auto;
+}
+
+.imageBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.numbering1 {
+    width: 3rem;
+    height: 3rem;
+    border: solid 2px #A9A9A9;
+    border-radius: 3rem;
+    margin: 14rem auto;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 p.title {
+    color: rgb(77, 196, 196);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.section1 h2 {
+    text-align: center;
+}
+
+.section1 p.text {
+    text-align: center;
+    color: #A9A9A9;
+}
+
+.numbering2 {
+    width: 3rem;
+    height: 3rem;
+    border: solid 2px #A9A9A9;
+    background-color: white;
+    border-radius: 3rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    left: 48.5%;
+}
+
+.section2 {
+    margin: 4rem auto;
+    background-image: url(assets/desktop/image-footer.jpg);
+    background-color: rgb(77, 196, 196, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2::before {
+    content: '';
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    background: linear-gradient( rgb(77, 196, 196, 0.5), rgb(77, 196, 196, 0.5));
+    pointer-events: none;
+}
+
+.section2 h2, p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.section2 button {
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+    color: white;
+    background-color: rgb(146, 87, 201);
+    height: 2rem;
+    width: 8rem;
+    border-radius: 100px;
+}
+
+@media only screen and (max-width: 375px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 2;
+    }
+
+    .lefthero {
+        width: 190px;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .righthero {
+        width: 190px;
+        grid-row: 1;
+        grid-column: 2;
+    }
+}
